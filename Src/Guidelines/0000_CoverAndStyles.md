@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra/
  --> 
 
@@ -17,6 +17,7 @@ for C# 3.0, 4.0 and 5.0
 <br/>
 <div class="author">
 Dennis Doomen<br/>
+![BizDataX](images/BizDataX.png)Customizations by BiyDataX Team<br/>
 Version %semver%<br/>
 %commitdate%
 </div>
