@@ -8,7 +8,8 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 
 - Keep the length of each line under 130 characters.
 
-- Use an indentation of 4 whitespaces, and don't use tabs
+- ~~Use an indentation of 4 whitespaces, and don't use tabs~~
+- Use tabs, not whitespaces, configure tab size to 4.
 
 - Keep one whitespace between keywords like `if` and the expression, but don't add whitespaces after `(` and before `)` such as: `if (condition == null)`.
 
