@@ -17,7 +17,7 @@ for C# 3.0, 4.0 and 5.0
 <br/>
 <div class="author">
 Dennis Doomen<br/>
-![BizDataX](images/BizDataX.png)Customizations by BiyDataX Team<br/>
+![BizDataX](images/BizDataX.png)Customizations by BizDataX Team<br/>
 Version %semver%<br/>
 %commitdate%
 </div>
