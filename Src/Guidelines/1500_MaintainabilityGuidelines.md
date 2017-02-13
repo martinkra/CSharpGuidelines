@@ -4,7 +4,7 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 
 #5. Maintainability Guidelines
 
-### <a name="av1500"></a> Methods should not exceed ~~7~~ 20 statements (AV1500) ![](images/1.png)![](images/bdx2.png)
+### <a name="av1500"></a> Methods should not exceed ~~7~~ 20 statements (AV1500) ![](images/not1.png)![](images/2.png)
 A method that requires more than ~~7~~ 20 statements is simply doing too much or has too many responsibilities. It also requires the human mind to analyze the exact statements to understand what the code is doing. Break it down into multiple small and focused methods with self-explaining names, but make sure the high-level algorithm is still clear.
 
 ### <a name="av1501"></a> Make all members private and types internal by default (AV1501) ![](images/1.png)
@@ -331,11 +331,13 @@ C# 4.0's named arguments have been introduced to make it easier to call COM comp
 
 	object[] myAttributes = type.GetCustomAttributes(typeof(MyAttribute), inherit: false);
 
-### <a name="av1561"></a> Don't allow methods and constructors with more than three parameters (AV1561) ![](images/1.png)
+### <a name="av1561"></a> Don't allow methods and constructors with more than three parameters (AV1561) ![](images/not1.png)![](images/2.png)
 If you create a method with more than three parameters, use a structure or class to pass multiple arguments, as explained in the [Specification design pattern](http://en.wikipedia.org/wiki/Specification_pattern). In general, the fewer the parameters, the easier it is to understand the method. Additionally, unit testing a method with many parameters requires many scenarios to test.
 
-### <a name="av1562"></a> Don't use `ref` or `out` parameters (AV1562) ![](images/1.png)
+### <a name="av1562"></a> Don't use `ref` or `out` parameters (AV1562) ![](images/not1.png)![](images/2.png)
 They make code less understandable and might cause people to introduce bugs. Instead, return compound objects.
+
+![](images/BizDataX.png) `ref` or `out` is allowed if there is a performance reason, e.g. dictionary's TryGet.
 
 ### <a name="av1564"></a> Avoid methods that take a bool flag (AV1564) ![](images/2.png)
 Consider the following method signature:
@@ -354,5 +356,7 @@ Never use a parameter as a convenient variable for storing temporary state. Even
 ### <a name="av1570"></a> Always check the result of an `as` operation (AV1570) ![](images/1.png)
 If you use `as` to obtain a certain interface reference from an object, always ensure that this operation does not return `null`. Failure to do so may cause a `NullReferenceException` at a much later stage if the object did not implement that interface.
 
-### <a name="av1575"></a> Don't comment out code (AV1575) ![](images/1.png)
+### <a name="av1575"></a> Don't comment out code (AV1575) ![](images/not1.png)![](images/2.png)
 Never check in code that is commented out. Instead, use a work item tracking system to keep track of some work to be done. Nobody knows what to do when they encounter a block of commented-out code. Was it temporarily disabled for testing purposes? Was it copied as an example? Should I delete it?
+
+![](images/BizDataX.png) Allowed during one or max two iterations.
