@@ -24,6 +24,9 @@ Go to the [Releases](https://github.com/dennisdoomen/CSharpGuidelines/releases) 
 ##Can I create my own version?##
 Absolutely. The corresponding [license](https://github.com/dennisdoomen/CSharpGuidelines/blob/master/LICENSE.md) allows you to fork, adapt and distribute that modified version within your organization as long as you refer back to the original version here. It's not required, but you would make me a very happy man if you credit me as the original author. And if you have any great ideas, recommendations or corrections, either submit an issue, or even better, fork the repository and provide me with a pull request. Just run the following command-line to compile the Markdown versions of the guidelines and cheatsheet to self-contained HTML files.
 
-  `build.bat`
+  ~~`build.bat`~~`JustHtml.bat`
+
+![](Src/Guidelines/images/BizDataX.png) The command produces `Src\Guidelines\CSharpGuidelines.html`.
+
 ##Are there any other languages available?##
 Yes, [Sergey Russkikh](https://twitter.com/Russkikh_Sergey) maintains a [Russian translation](https://github.com/SergeyRusskih/CSharpGuidelines.Russian) through his fork.
